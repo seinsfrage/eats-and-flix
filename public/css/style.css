@@ -1,0 +1,180 @@
+html,body, .wrap{
+	min-height: 100%;
+}
+#content-area{
+	visibility: hidden;
+}
+#map{
+	height: 500px;
+	margin: 25px;
+	width: 100%;
+}
+#directions-box{
+	display: flex;
+	justify-content: center;
+	margin: 15px;
+}
+#headers{
+	display: flex;
+	justify-content: space-between;
+}
+#help{
+	font-size: 15px;
+}
+body{
+	background:url(../images/city.jpg);
+	background-size: cover;
+	
+}
+label{
+	color: white;
+	font-size: 15px;
+}
+form{
+	display: flex;
+	justify-content: center;
+}
+img{
+	width: 300px;
+	height: auto;
+	opacity: .94;
+}
+#submit-button{
+ 	float: right;
+}
+#foodDisplay, #movieDisplay{
+	background: firebrick;
+	border: none;
+    border-radius: 25px;
+	height: 500px;
+	/*max-width: 565px;*/
+  	overflow: auto;
+  	visibility: hidden;
+}
+.jumbotron{
+	background: transparent;
+}
+.info{
+	opacity: .9;
+	background: blue;
+	border: none;
+	margin: 0 auto;
+	width: 65%;
+}
+.help{
+	background-color: darkgrey;
+	border-radius: 5px;
+	font-weight: bolder;
+	font-size: 22px;
+	padding: 2px 12px;
+}
+.panel-heading{
+	background-color:firebrick; 
+	color:white; 
+	border-radius: 20px;
+}
+.title{
+	max-width: 90%;
+}
+.unavail{
+	margin-left: 15px;
+	font-weight: bold;
+}
+.expand, .expand2{
+	float: right;
+	color: firebrick;
+	font-size: 3em;
+	cursor: pointer;
+}
+.movieItem{
+	list-style: none;
+}
+.restItem{
+	list-style: none;
+}
+.movieItem:hover{
+	background-color: snow;
+	color: black;
+	cursor: pointer;
+}
+.restItem:hover{
+	background-color: snow;
+	color: black;
+	cursor: pointer;
+}
+.movieItem:hover .theaters{
+	color: black;
+	background-color: snow;
+}
+.movieItem:hover .expand{
+	color: firebrick;
+}
+.restItem:hover .expand{
+	color: firebrick;
+}
+.movieItem:hover .site{
+	color: black;
+}
+.title{
+	display: inline-block;
+	font-variant: small-caps;
+}
+.cast{
+	font-weight: bold;
+}
+.cast-members{
+	border-bottom: 2px solid white;
+	margin-bottom:5px;
+	padding-bottom: 5px;
+}
+.actor{
+	display: inline-block;
+	margin: 0px 20px;
+}
+.site{
+	float: right;
+	color: white;
+}
+.theaters, option{
+	margin-bottom:15px;
+	color: black;
+	font-weight: bold;
+}
+.hide{
+	display: none;
+}
+
+.panel-heading+.list-group .list-group-item:first-child {
+    border-top-width: thin;
+}
+.unavailable{
+	display: inline-block;
+	margin-left: 15px;
+}
+.open, .open2{
+	background-color: white;
+	color: black;
+}
+
+#city-label, #zip-label, #date-label {
+	margin: auto;
+}
+#map-container{
+	display: flex;
+	justify-content: center;
+}
+#directionsPanel{
+	background-color: white;
+}
+#comment-form{
+	max-width: 405px;
+	padding: 15px;
+}
+#textarea{
+	background: firebrick;
+	border: none;
+}
+#comment-input{
+	width: 100%;
+	resize: none;
+}
